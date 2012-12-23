@@ -1,0 +1,27 @@
+#\DeclareLyXModule[]{algorithm2e float}
+#DescriptionBegin
+# Wrapper for the algorithm2e environment
+#DescriptionEnd
+#Requires   
+#Excludes
+#Author: phbaer (many thanks to Chris)
+
+Format 11
+
+Requires algorithm2e
+
+AddToPreamble
+    \usepackage{algorithm2e} % added by a2e.module
+EndPreamble
+
+Float
+    Type algorithm2e
+    GuiName Algorithm2e
+    Placement tbp
+    Extension loa
+    NumberWithin none
+    Style plain
+    ListName "List of Algorithms"
+    LaTeXBuiltin false
+End
+
